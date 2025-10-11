@@ -1,4 +1,4 @@
-# [file name]: admin.py
+# 157 fee 
 # [file content begin]
 #type:ignore
 import streamlit as st
@@ -154,11 +154,11 @@ def set_student_fees():
                 class_category = st.selectbox("Class Category*", CLASS_CATEGORIES)
             
             # Dynamic fee inputs
-            monthly_fee = st.number_input("Monthly Fee*", min_value=0, value=2000, step=100,
+            monthly_fee = st.number_input("Monthly Fee*", min_value=0, value=3000, step=100,
                                          help="This amount will be shown when entering monthly fees")
-            annual_charges = st.number_input("Annual Charges*", min_value=0, value=2000, step=100,
+            annual_charges = st.number_input("Annual Charges*", min_value=0, value=3500, step=100,
                                            help="This amount will be shown when entering annual charges")
-            admission_fee = st.number_input("Admission Fee*", min_value=0, value=1000, step=100,
+            admission_fee = st.number_input("Admission Fee*", min_value=0, value=10000, step=100,
                                           help="This amount will be shown when entering admission fee")
             
             submit = st.form_submit_button("💾 Save Fee Settings")

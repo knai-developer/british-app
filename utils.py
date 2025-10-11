@@ -449,9 +449,9 @@ def get_student_fee_amount(student_id, fee_type):
     
     # Default fees if not set by admin
     default_fees = {
-        "monthly": 2000,
-        "annual": 2000,
-        "admission": 1000
+        "monthly": 3000,
+        "annual": 3500,
+        "admission": 10000
     }
     return default_fees.get(fee_type, 0)
 # [file content end]

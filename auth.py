@@ -1,5 +1,4 @@
-# [file name]: auth.py
-# [file content begin]
+# trail day set 118
 # type:ignore
 import streamlit as st
 import json
@@ -115,7 +114,7 @@ def create_user(username, password, email, is_admin=False):
                 return False, "This Gmail address is already registered. Please use a different Gmail address or log in."
         
         trial_start = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        trial_end = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d %H:%M:%S")
+        trial_end = (datetime.now() + timedelta(days=30)).strftime("%Y-%m-%d %H:%M:%S")
                 
         users[username] = {
             "password": hash_password(password),
